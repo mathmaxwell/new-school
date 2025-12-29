@@ -2,14 +2,14 @@ import { create } from 'zustand'
 
 interface ModalState {
 	isOpen: boolean
-	image: string
-	description: string
-	time: string
+	image?: string
+	description?: string
+	time?: string
 
 	openModal: (data: {
-		image: string
-		description: string
-		time: string
+		image?: string
+		description?: string
+		time?: string
 	}) => void
 
 	closeModal: () => void
